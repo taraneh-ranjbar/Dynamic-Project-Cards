@@ -65,7 +65,6 @@ function renderProjects(projectList) {
     container.innerHTML += card;
   });
 }
-
 renderProjects(projects);
 
 const searchInput = document.getElementById("searchInput");
