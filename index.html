@@ -4,12 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Dynamic Project Cards</title>
-   
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+<nav class="navbar">
+    <h2 class="logo">Develop Site</h2>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    <!-- card section-->
+     <section class="card-section">
+       
+           
+              <div id="projects-container"></div>
+           
+     </section>
+   
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+     <!-- form section-->
+      <section class="form-section">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+             <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="subject">Subject:</label>
+            <select id="subject" required>
+                <option value="">Select</option>
+                <option>General</option>
+                <option>Projects</option>
+            </select>
+            
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            
+           
+                <button type="submit">Send</button>
+        </form>
+      </section>
+    <footer class="footer">
+        <p>© 2026 Develop Site | All Rights Reserved</p>
+    </footer>
+</main>
 
 <script src="script.js"></script>
 </body>
