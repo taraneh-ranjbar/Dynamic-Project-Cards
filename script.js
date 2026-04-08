@@ -1,5 +1,5 @@
 const projects = [
-  {
+ /* {
     id: 1,
     title: "Digital Wallet System",
     description: "A secure digital wallet platform for managing user balances, transactions, and real-time payment tracking.",
@@ -43,9 +43,22 @@ const projects = [
     category: "security",
     image: "images/security.jpeg",
     link: "#"
-  }
+  }*/
 ];
 console.log(projects);
+
+async function loadProjects() {
+  try {
+    const response = await fetch("https://magnetikworks.github.io/project-data/data/projects.json");
+    const data = await response.json();
+
+    console.log(data); 
+
+    renderProjects(data);
+  } catch (error) {
+    console.error("Error loading projects:", error);
+  }
+}
 
 const container = document.getElementById("projects-container");
 function renderProjects(projectList) {
@@ -65,7 +78,8 @@ function renderProjects(projectList) {
     container.innerHTML += card;
   });
 }
-renderProjects(projects);
+/*renderProjects(projects);*/
+loadProjects();
 
 const searchInput = document.getElementById("searchInput");
 searchInput.addEventListener("input", function () {
