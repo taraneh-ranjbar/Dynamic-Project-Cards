@@ -5,7 +5,7 @@
     "description": "A secure digital wallet platform for managing user balances, transactions, and real-time payment tracking.",
     "button": "View Wallet Project",
     "category": "fintech",
-    "image": "images/wallet.jpg",
+    "image": "images/wallet.jpeg",
     "link": "#"
   },
   {
@@ -14,7 +14,7 @@
     "description": "An intelligent finance dashboard that categorizes expenses, tracks income, and provides budgeting insights.",
     "button": "View PFM Project",
     "category": "finance",
-    "image": "images/pfm.jpg",
+    "image": "images/pfm.jpeg",
     "link": "#"
   },
   {
