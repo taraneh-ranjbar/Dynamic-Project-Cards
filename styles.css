@@ -199,3 +199,10 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.no-result {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 40px;
+}

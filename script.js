@@ -16,8 +16,16 @@ async function loadProjects() {
 }
 
 const container = document.getElementById("projects-container");
+
 function renderProjects(projectList) {
   container.innerHTML = "";
+
+    if (projectList.length === 0) {
+    container.innerHTML = `
+      <p class="no-result">No projects found. Try another keyword.</p>
+    `;
+    return;
+  }
 
   projectList.forEach(project => {
     const card = `
@@ -37,6 +45,7 @@ function renderProjects(projectList) {
 loadProjects();
 
 const searchInput = document.getElementById("searchInput");
+
 searchInput.addEventListener("input", function () {
   const searchValue = searchInput.value.toLowerCase();
 
