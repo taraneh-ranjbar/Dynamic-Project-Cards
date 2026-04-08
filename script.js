@@ -1,10 +1,12 @@
 
+let projects =[];
+
 async function loadProjects() {
   try {
 
     const response = await fetch("https://raw.githubusercontent.com/taraneh-ranjbar/Dynamic-Project-Cards/feature/api-integration/data/projects.json");
     const data = await response.json();
-
+    projects = data;
     console.log(data); 
 
     renderProjects(data);
