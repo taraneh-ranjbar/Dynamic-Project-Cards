@@ -49,7 +49,7 @@ console.log(projects);
 
 async function loadProjects() {
   try {
-    const response = await fetch("https://magnetikworks.github.io/project-data/data/projects.json");
+    const response = await fetch("https://raw.githubusercontent.com/taraneh-ranjbar/Dynamic-Project-Cards/refs/heads/feature/api-integration/data/projects.json");
     const data = await response.json();
 
     console.log(data); 
