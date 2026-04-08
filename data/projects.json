@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Digital Wallet System",
+    "description": "Secure wallet for managing transactions",
+    "category": "fintech",
+    "image": "images/wallet.jpg"
+  },
+  {
+    "id": 2,
+    "title": "PFM Dashboard",
+    "description": "Track income and expenses",
+    "category": "finance",
+    "image": "images/pfm.jpg"
+  }
+]
